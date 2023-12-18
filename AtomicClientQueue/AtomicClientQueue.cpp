@@ -20,7 +20,7 @@ void clientTh() {
             expected = client.load(std::memory_order_relaxed);
         }
 
-        std::cout << "Êëèåíò ïðèøåë. Âñåãî êëèåíòîâ: " << client.load(std::memory_order_relaxed) << std::endl;
+        std::cout << "ÐšÐ»Ð¸ÐµÐ½Ñ‚ Ð¿Ñ€Ð¸ÑˆÐµÐ». Ð’ÑÐµÐ³Ð¾ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð¾Ð²: " << client.load(std::memory_order_relaxed) << std::endl;
     }
 }
 
@@ -35,7 +35,7 @@ void operatorTh() {
             expected = client.load(std::memory_order_relaxed);
         }
 
-        std::cout << "Îïåðàöèîíèñò îáñëóæèë êëèåíòà. Âñåãî êëèåíòîâ: " << client.load(std::memory_order_relaxed) << std::endl;
+        std::cout << "ÐžÐ¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð¸ÑÑ‚ Ð¾Ð±ÑÐ»ÑƒÐ¶Ð¸Ð» ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°. Ð’ÑÐµÐ³Ð¾ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð¾Ð²: " << client.load(std::memory_order_relaxed) << std::endl;
     }
 }
 
@@ -50,7 +50,6 @@ int main() {
 
     return 0;
 }
-
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
